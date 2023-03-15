@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Blaka&family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header-section container-header">
+      <div class="container container-header">
+        <nav class="nav-header">
+          <a class="logo header-logo" href="#">WebStudio</a>
+          <ul class="container-ul">
+            <li>
+              <a class="nav-item current" href="./index.html">Estudio</a>
+            </li>
+            <li>
+              <a class="nav-item" href="./portfolio.html">Portafolio</a>
+            </li>
+            <li>
+              <a class="nav-item" href="#">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- contenedor derecho -->
+        <ul class="nav-info">
+          <li class="phone-info">
+            <svg class="icon-n" width="10" height="16">
+              <use href="./images/icons.svg#icon-n-phone"></use>
+            </svg>
+            <a href="tel:+525555296000">+52 55 5529 6000</a>
+          </li>
+          <li class="email-info">
+            <svg class="icon-n" width="16" height="12">
+              <use href="./images/icons.svg#icon-n-mail"></use>
+            </svg>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- contenedor main -->
+    <main>
+      <section class="h1-section">
+        <h1 class="h1">soluciones eficaces para su negocio</h1>
+        <!-- DEFINIR EL TIPO DE ELEMENTO INPUT O BUTTON PARA EL SIGUIENTE... -->
+        <button type="button" class="button-service">
+          <span class="service-text-button">solicite nuestro servicio</span>
+        </button>
+      </section>
+
+      <!-- contenedor servicios -->
+      <section class="container services-section">
+        <h2 class="services" hidden>servicios</h2>
+        <ul class="container-services">
+          <li class="container-service-item">
+            <div class="service-icons">
+              <svg class="icon-service" width="65.32">
+                <use href="./images/icons.svg#icon-antena1"></use>
+              </svg>
+            </div>
+            <h3 class="service">atención a los detalles</h3>
+            <p class="service-text">
+              Nos adentramos en todos los detalles y procesos de su negocio,
+              para así desarrolar una solución a su medida
+            </p>
+          </li>
+          <li class="container-service-item">
+            <div class="service-icons">
+              <svg class="icon-service" width="66.96">
+                <use href="./images/icons.svg#icon-reloj1"></use>
+              </svg>
+            </div>
+            <h3 class="service">puntualidad</h3>
+            <p class="service-text">
+              Con nosotros, usted puede sentirse seguro y protegido. Un
+              principio importante de la empresa: respetar su tiempo y respetar
+              los plazos acordados.
+            </p>
+          </li>
+          <li class="container-service-item">
+            <div class="service-icons">
+              <svg class="icon-service" width="70">
+                <use href="./images/icons.svg#icon-diagrama1"></use>
+              </svg>
+            </div>
+            <h3 class="service">planificación</h3>
+            <p class="service-text">
+              Usted podrá observar y participar en cada fase del desarrollo y
+              aplicación de soluciones.
+            </p>
+          </li>
+          <li class="container-service-item">
+            <div class="service-icons">
+              <svg class="icon-service" width="54.83">
+                <use href="./images/icons.svg#icon-astronauta1"></use>
+              </svg>
+            </div>
+            <h3 class="service">tegnología moderna</h3>
+            <p class="service-text">
+              Usamos herramientas innovadoras para resolver las tareas
+              asignadas. Es hora de simplificar los procesos laborales
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- visión de la empresa -->
+      <section class="container vision-section">
+        <h2 class="vision-introduction">A qué nos dedicamos</h2>
+        <ul class="flex-products-images">
+          <li>
+            <img
+              class="product-image"
+              src="./images/estudio.jpg"
+              width="373"
+              alt="equipo monitor"
+            />
+            <p class="text-relative">aplicaciones de escritorio</p>
+          </li>
+          <li>
+            <img
+              class="product-image"
+              src="./images/estudio(1).jpg"
+              width="373"
+              alt="equipo phone"
+            />
+            <p class="text-relative">aplicaciones moviles</p>
+          </li>
+          <li>
+            <img
+              class="product-image"
+              src="./images/estudio(2).jpg"
+              width="373"
+              alt="equipo tablet"
+            />
+            <p class="text-relative">solusiones de diseño</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- contenedor Team -->
+      <section class="team">
+        <div class="container container-team">
+          <h2 class="our-team">Nuestro Equipo</h2>
+          <ul class="container-ul-team">
+            <li>
+              <div class="worker-card">
+                <img
+                  class="member-image"
+                  src="./images/team.jpg"
+                  width="270"
+                  alt="diseñador de productos, Andrés Cubo"
+                />
+                <h3 class="member">Andrés Cubo</h3>
+                <p class="profession">Diseñador de Productos</p>
+                <ul class="team-icons">
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://www.instagram.com/?hl=en"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://es-la.facebook.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="worker-card">
+                <img
+                  class="member-image"
+                  src="./images/team(1).jpg"
+                  width="270"
+                  alt="desarroladora frontend, Carla Palacios"
+                />
+                <h3 class="member">Carla Palacios</h3>
+                <p class="profession">Desarrolladora Frontend</p>
+                <ul class="team-icons">
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://www.instagram.com/?hl=en"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://es-la.facebook.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="worker-card">
+                <img
+                  class="member-image"
+                  src="./images/team(2).jpg"
+                  width="270"
+                  alt="marketing, Mario Dorado"
+                />
+                <h3 class="member">Mario Dorado</h3>
+                <p class="profession">Marketing</p>
+                <ul class="team-icons">
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://www.instagram.com/?hl=en"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://es-la.facebook.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="worker-card">
+                <img
+                  class="member-image"
+                  src="./images/team(3).jpg"
+                  width="270"
+                  alt="diseñador IU, Pablo Mijangos"
+                />
+                <h3 class="member">Pablo Mijangos</h3>
+                <p class="profession">Diseñador IU</p>
+                <ul class="team-icons">
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://www.instagram.com/?hl=en"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://es-la.facebook.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon-team"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon-t" width="20">
+                        <use
+                          href="./images/icons.svg#icon-social-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- container costumers -->
+      <section class="container-costumers">
+        <h2>Clientes Regulares</h2>
+        <ul class="costumer-icons">
+          <li class="costum-icon-contain">
+            <svg class="icon-costumer" width="54.83">
+              <use href="./images/icons.svg#icon-grupo1"></use>
+            </svg>
+          </li>
+          <li class="costum-icon-contain">
+            <svg class="icon-costumer" width="54.83">
+              <use href="./images/icons.svg#icon-grupo2"></use>
+            </svg>
+          </li>
+          <li class="costum-icon-contain">
+            <svg class="icon-costumer" width="54.83">
+              <use href="./images/icons.svg#icon-grupo3"></use>
+            </svg>
+          </li>
+          <li class="costum-icon-contain">
+            <svg class="icon-costumer" width="54.83">
+              <use href="./images/icons.svg#icon-grupo4"></use>
+            </svg>
+          </li>
+          <li class="costum-icon-contain">
+            <svg class="icon-costumer" width="54.83">
+              <use href="./images/icons.svg#icon-grupo5"></use>
+            </svg>
+          </li>
+          <li class="costum-icon-contain">
+            <svg class="icon-costumer" width="54.83">
+              <use href="./images/icons.svg#icon-grupo6"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- contenedor Footer -->
+    <footer class="footer-section">
+      <div class="container footer-container">
+        <div>
+          <a
+            class="logo footer-logo"
+            href="#"
+            target="_blank"
+            rel="noreferrer noopener"
+            >WebStudio</a
+          >
+          <address class="footer-address container-address">
+            <ul>
+              <li>
+                <a
+                  href="https://goo.gl/maps/6RyMc8973b48PpKp9"
+                  target="blank"
+                  rel="noreferrer noopener"
+                  >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+                >
+              </li>
+              <li class="info">
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="info">
+                <a href="tel:+525555296000">+52 55 5529 6000</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="f-icons">
+          <p>encuentranos en</p>
+          <ul class="footer-icons">
+            <li>
+              <a
+                class="icon-footer"
+                href="https://www.instagram.com/?hl=en"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="icon-f" width="20">
+                  <use href="./images/icons.svg#icon-social-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="icon-footer"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="icon-f" width="20">
+                  <use href="./images/icons.svg#icon-social-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="icon-footer"
+                href="https://es-la.facebook.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="icon-f" width="20">
+                  <use href="./images/icons.svg#icon-social-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="icon-footer"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="icon-f" width="20">
+                  <use href="./images/icons.svg#icon-social-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
